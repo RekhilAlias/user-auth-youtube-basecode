@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sample App Screen </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="child-container">
+        <h1>User authentication</h1>
+        <input
+          placeholder="Enter your email"
+          type="email"
+          id="email"
+          required
+        />
+        <input
+          placeholder="Enter your password"
+          type="password"
+          id="password"
+          required
+        />
+
+        <button id="signup-btn" class="btn">Signup</button>
+        <button id="login-btn" class="btn">Login</button>
+        <button id="logout-btn" class="btn">Logout</button>
+      </form>
+    </div>
+
+    <!--firebase script -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase.js"></script>
+
+    <script>
+      
+    
+var firebaseConfig = {
+    
+
+  // Your web app's Firebase configuration
+  
+
+
+
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+      
+      
+      //firebase metho
+
+      const auth = firebase.auth();
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
